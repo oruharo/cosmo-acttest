@@ -1,0 +1,15 @@
+*.cert
+*.crt
+*.key
+**/bin
+**/build
+**/dist
+**/node_modules
+**/*.log
+**/*.bk
+.github
+.vscode
+charts
+cover.out
+docs
+testbin

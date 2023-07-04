@@ -1,0 +1,6 @@
+# see https://github.com/k3s-io/k3s/blob/master/manifests/traefik.yaml
+
+traefik:
+  service:
+    type: LoadBalancer
+    # type: NodePort

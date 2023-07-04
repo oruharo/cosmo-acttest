@@ -1,0 +1,931 @@
+['Dashboard server [Workspace] [CreateWorkspace] ✅ success in normal context: admin user with vars 1']
+SnapShot = """
+{
+  \"message\": \"Successfully created\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"admin-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"vars\": {
+        \"HOGE\": \"HOGEHOGE\"
+      },
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [CreateWorkspace] ✅ success in normal context: admin user with vars 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"vars\": {
+      \"HOGE\": \"HOGEHOGE\"
+    },
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"config\": {}
+  }
+}
+"""
+
+['Dashboard server [Workspace] [CreateWorkspace] ✅ success in normal context: admin user without vars 1']
+SnapShot = """
+{
+  \"message\": \"Successfully created\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"admin-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [CreateWorkspace] ✅ success in normal context: admin user without vars 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"config\": {}
+  }
+}
+"""
+
+['Dashboard server [Workspace] [CreateWorkspace] ✅ success in normal context: normal user without vars 1']
+SnapShot = """
+{
+  \"message\": \"Successfully created\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"normal-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [CreateWorkspace] ✅ success in normal context: normal user without vars 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-normal-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"config\": {}
+  }
+}
+"""
+
+["Dashboard server [Workspace] [CreateWorkspace] ❌ fail with authorization by role: normal user cannot create admin user's workspace 1"]
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [CreateWorkspace] ❌ fail with invalid request: empty template 1']
+SnapShot = 'invalid_argument: invalid CreateWorkspaceRequest.Template: value length must be at least 1 runes'
+
+['Dashboard server [Workspace] [CreateWorkspace] ❌ fail with invalid request: empty workspace name 1']
+SnapShot = 'invalid_argument: invalid CreateWorkspaceRequest.WsName: value length must be at least 1 runes'
+
+['Dashboard server [Workspace] [CreateWorkspace] ❌ fail with invalid request: invalid template 1']
+SnapShot = 'invalid_argument: failed to get workspace config in template'
+
+['Dashboard server [Workspace] [CreateWorkspace] ❌ fail with invalid request: invalid username 1']
+SnapShot = 'not_found: user is not found'
+
+['Dashboard server [Workspace] [CreateWorkspace] ❌ fail with invalid request: invalid workspace name 1']
+SnapShot = 'internal: failed to create workspace'
+
+['Dashboard server [Workspace] [CreateWorkspace] ❌ fail with invalid request: workspace already exists 1']
+SnapShot = 'already_exists: Workspace already exists'
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ✅ success in normal context: Entry: admin-user, user_name:"admin-user" ws_name:"ws1" index:1 1']
+SnapShot = """
+{
+  \"message\": \"Successfully removed network rule\",
+  \"network_rule\": {
+    \"port_number\": 9999,
+    \"custom_host_prefix\": \"nw1\",
+    \"http_path\": \"/\"
+  }
+}
+"""
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ✅ success in normal context: Entry: admin-user, user_name:"admin-user" ws_name:"ws1" index:1 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ✅ success in normal context: Entry: normal-user, user_name:"normal-user" ws_name:"ws1" index:1 1']
+SnapShot = """
+{
+  \"message\": \"Successfully removed network rule\",
+  \"network_rule\": {
+    \"port_number\": 9999,
+    \"custom_host_prefix\": \"nw1\",
+    \"http_path\": \"/\"
+  }
+}
+"""
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ✅ success in normal context: Entry: normal-user, user_name:"normal-user" ws_name:"ws1" index:1 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-normal-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ❌ fail with an unexpected error at update: Entry: admin-user, user_name:"admin-user" ws_name:"ws1" index:1 1']
+SnapShot = 'internal: failed to remove network rule'
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ❌ fail with authorization by role: Entry: normal-user, user_name:"admin-user" ws_name:"ws1" index:1 1']
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ❌ fail with invalid request: Entry: admin-user, user_name:"admin-user" ws_name:"ws1" index:-1 1']
+SnapShot = 'internal: index out of range'
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ❌ fail with invalid request: Entry: admin-user, user_name:"admin-user" ws_name:"ws1" index:2 1']
+SnapShot = 'internal: index out of range'
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ❌ fail with invalid request: Entry: admin-user, user_name:"admin-user" ws_name:"xxx" index:1 1']
+SnapShot = 'not_found: workspace is not found'
+
+['Dashboard server [Workspace] [DeleteNetworkRule] ❌ fail with invalid request: Entry: admin-user, user_name:"xxxxx" ws_name:"ws1" index:1 1']
+SnapShot = 'not_found: user is not found'
+
+["Dashboard server [Workspace] [DeleteWorkspace] ✅ success in normal context: admin user can delete normal user's workspace 1"]
+SnapShot = """
+{
+  \"message\": \"Successfully deleted\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"normal-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"vars\": {
+        \"HOGE\": \"HOGEHOGE\"
+      },
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [DeleteWorkspace] ✅ success in normal context: normal user can delete own workspace 1']
+SnapShot = """
+{
+  \"message\": \"Successfully deleted\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"normal-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"vars\": {
+        \"HOGE\": \"HOGEHOGE\"
+      },
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [DeleteWorkspace] ❌ fail with an unexpected error at delete: unexpected err 1']
+SnapShot = 'internal: failed to delete workspace'
+
+["Dashboard server [Workspace] [DeleteWorkspace] ❌ fail with authorization by role: normal user cannot delete admin's workspace 1"]
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [DeleteWorkspace] ❌ fail with invalid request: invalid user name 1']
+SnapShot = 'not_found: user is not found'
+
+['Dashboard server [Workspace] [DeleteWorkspace] ❌ fail with invalid request: invalid workspace name 1']
+SnapShot = 'not_found: workspace is not found'
+
+["Dashboard server [Workspace] [GetWorkspace] ✅ success in normal context: admin user can get normal user's workspace 1"]
+SnapShot = """
+{
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"normal-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"vars\": {
+        \"HOGE\": \"HOGEHOGE\"
+      },
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        },
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"add\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [GetWorkspace] ✅ success in normal context: admin user can get own workspace 1']
+SnapShot = """
+{
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"admin-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [GetWorkspace] ✅ success in normal context: normal user can get own workspace 1']
+SnapShot = """
+{
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"normal-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 1,
+      \"vars\": {
+        \"HOGE\": \"HOGEHOGE\"
+      },
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        },
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"add\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [GetWorkspace] ❌ fail with an unexpected error at list: unexpected err 1']
+SnapShot = 'internal: failed to get user'
+
+["Dashboard server [Workspace] [GetWorkspace] ❌ fail with authorization by role: normal user cannot get admin's workspace 1"]
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [GetWorkspace] ❌ fail with invalid request: invalid user name 1']
+SnapShot = 'not_found: user is not found'
+
+['Dashboard server [Workspace] [GetWorkspace] ❌ fail with invalid request: invalid workspace name 1']
+SnapShot = 'not_found: workspace is not found'
+
+["Dashboard server [Workspace] [GetWorkspaces] ✅ success in normal context: admin user can get normal user's workspaces 1"]
+SnapShot = """
+{
+  \"message\": \"No items found\"
+}
+"""
+
+['Dashboard server [Workspace] [GetWorkspaces] ✅ success in normal context: admin user can get own workspaces 1']
+SnapShot = """
+{
+  \"items\": [
+    {
+      \"name\": \"ws1\",
+      \"owner_name\": \"admin-user\",
+      \"spec\": {
+        \"template\": \"template1\",
+        \"replicas\": 1,
+        \"network\": [
+          {
+            \"port_number\": 18080,
+            \"custom_host_prefix\": \"main\",
+            \"http_path\": \"/\"
+          }
+        ]
+      },
+      \"status\": {
+        \"phase\": \"Pending\"
+      }
+    },
+    {
+      \"name\": \"ws2\",
+      \"owner_name\": \"admin-user\",
+      \"spec\": {
+        \"template\": \"template1\",
+        \"replicas\": 1,
+        \"network\": [
+          {
+            \"port_number\": 18080,
+            \"custom_host_prefix\": \"main\",
+            \"http_path\": \"/\"
+          },
+          {
+            \"port_number\": 1111,
+            \"custom_host_prefix\": \"nw1\",
+            \"http_path\": \"/\"
+          },
+          {
+            \"port_number\": 3333,
+            \"custom_host_prefix\": \"nw2\",
+            \"http_path\": \"/\"
+          },
+          {
+            \"port_number\": 2222,
+            \"custom_host_prefix\": \"nw3\",
+            \"http_path\": \"/\"
+          }
+        ]
+      },
+      \"status\": {
+        \"phase\": \"Pending\"
+      }
+    }
+  ]
+}
+"""
+
+['Dashboard server [Workspace] [GetWorkspaces] ✅ success in normal context: normal user can get own workspaces 1']
+SnapShot = """
+{
+  \"message\": \"No items found\"
+}
+"""
+
+["Dashboard server [Workspace] [GetWorkspaces] ❌ fail with authorization by role: normal user cannot get admin's workspaces 1"]
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [GetWorkspaces] ❌ fail with invalid request: invalid user name 1']
+SnapShot = 'not_found: user is not found'
+
+['Dashboard server [Workspace] [GetWorkspaces] ❌ fail with unexpected error: unexpected err 1']
+SnapShot = 'internal: failed to list workspaces'
+
+['Dashboard server [Workspace] [UpdateWorkspace] ✅ success in normal context: admin user can update own workspace with no change 1']
+SnapShot = 'invalid_argument: no change'
+
+["Dashboard server [Workspace] [UpdateWorkspace] ✅ success in normal context: admin user can update own workspace's replica 1"]
+SnapShot = """
+{
+  \"message\": \"Successfully updated\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"admin-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+["Dashboard server [Workspace] [UpdateWorkspace] ✅ success in normal context: admin user can update own workspace's replica 2"]
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 0,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+["Dashboard server [Workspace] [UpdateWorkspace] ✅ success in normal context: normal user can update own workspace's replica 1"]
+SnapShot = """
+{
+  \"message\": \"Successfully updated\",
+  \"workspace\": {
+    \"name\": \"ws1\",
+    \"owner_name\": \"normal-user\",
+    \"spec\": {
+      \"template\": \"template1\",
+      \"replicas\": 5,
+      \"network\": [
+        {
+          \"port_number\": 18080,
+          \"custom_host_prefix\": \"main\",
+          \"http_path\": \"/\"
+        }
+      ]
+    },
+    \"status\": {
+      \"phase\": \"Pending\"
+    }
+  }
+}
+"""
+
+["Dashboard server [Workspace] [UpdateWorkspace] ✅ success in normal context: normal user can update own workspace's replica 2"]
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-normal-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 5,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpdateWorkspace] ❌ fail with an unexpected error at update: unexpected err 1']
+SnapShot = 'internal: failed to update workspace'
+
+["Dashboard server [Workspace] [UpdateWorkspace] ❌ fail with authorization by role: normal user cannot update admin's workspace 1"]
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [UpdateWorkspace] ❌ fail with invalid request: invalid user name 1']
+SnapShot = 'not_found: user is not found'
+
+['Dashboard server [Workspace] [UpdateWorkspace] ❌ fail with invalid request: invalid workspace name 1']
+SnapShot = 'not_found: workspace is not found'
+
+['Dashboard server [Workspace] [UpdateWorkspace] ❌ fail with invalid request: no change 1']
+SnapShot = 'invalid_argument: no change'
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: insert the same excluding path 1']
+SnapShot = """
+{
+  \"message\": \"Successfully upserted network rule\",
+  \"network_rule\": {
+    \"port_number\": 3000,
+    \"custom_host_prefix\": \"nw1\",
+    \"http_path\": \"/dev\",
+    \"public\": true
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: insert the same excluding path 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      },
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 3000,
+        \"customHostPrefix\": \"nw1\",
+        \"httpPath\": \"/dev\",
+        \"public\": true
+      },
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 9999,
+        \"customHostPrefix\": \"nw1\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: insert with only port 1']
+SnapShot = """
+{
+  \"message\": \"Successfully upserted network rule\",
+  \"network_rule\": {
+    \"port_number\": 3000,
+    \"http_path\": \"/\"
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: insert with only port 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      },
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 3000,
+        \"httpPath\": \"/\",
+        \"public\": false
+      },
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 9999,
+        \"customHostPrefix\": \"nw1\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: update existing record: port number 1']
+SnapShot = """
+{
+  \"message\": \"Successfully upserted network rule\",
+  \"network_rule\": {
+    \"port_number\": 3000,
+    \"custom_host_prefix\": \"nw1\",
+    \"http_path\": \"/\",
+    \"public\": true
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: update existing record: port number 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      },
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 3000,
+        \"customHostPrefix\": \"nw1\",
+        \"httpPath\": \"/\",
+        \"public\": true
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: update existing record: public 1']
+SnapShot = """
+{
+  \"message\": \"Successfully upserted network rule\",
+  \"network_rule\": {
+    \"port_number\": 9999,
+    \"custom_host_prefix\": \"nw1\",
+    \"http_path\": \"/\",
+    \"public\": true
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ✅ success in normal context: update existing record: public 2']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ws1\",
+    \"namespace\": \"cosmo-user-admin-user\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"template\": {
+      \"name\": \"template1\"
+    },
+    \"replicas\": 1,
+    \"network\": [
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 18080,
+        \"customHostPrefix\": \"main\",
+        \"httpPath\": \"/\",
+        \"public\": false
+      },
+      {
+        \"protocol\": \"http\",
+        \"portNumber\": 9999,
+        \"customHostPrefix\": \"nw1\",
+        \"httpPath\": \"/\",
+        \"public\": true
+      }
+    ]
+  },
+  \"status\": {
+    \"instance\": {},
+    \"phase\": \"Pending\",
+    \"config\": {
+      \"serviceName\": \"workspace\",
+      \"mainServicePortName\": \"main\"
+    }
+  }
+}
+"""
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ❌ fail with an unexpected error at update: Entry: admin-user, user_name:"admin-user" ws_name:"ws1" network_rule:{port_number:2001} 1']
+SnapShot = 'internal: failed to upsert network rule'
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ❌ fail with authorization by role: Entry: normal-user, user_name:"admin-user" ws_name:"ws1" network_rule:{port_number:2000} 1']
+SnapShot = 'permission_denied'
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ❌ fail with invalid request: duplicate ports: insert 1']
+SnapShot = 'invalid_argument: failed to upsert network rule: admission webhook "vworkspace.kb.io" denied the request: network rules check failed: duplicate network rules: {"protocol":"http","portNumber":18080,"customHostPrefix":"main","httpPath":"/","public":false}'
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ❌ fail with invalid request: duplicate ports: update 1']
+SnapShot = 'invalid_argument: failed to upsert network rule: admission webhook "vworkspace.kb.io" denied the request: network rules check failed: duplicate network rules: {"protocol":"http","portNumber":9999,"customHostPrefix":"nw1","httpPath":"/","public":false}'
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ❌ fail with invalid request: invalid user name 1']
+SnapShot = 'not_found: user is not found'
+
+['Dashboard server [Workspace] [UpsertNetworkRule] ❌ fail with invalid request: invalid workspace name 1']
+SnapShot = 'not_found: workspace is not found'

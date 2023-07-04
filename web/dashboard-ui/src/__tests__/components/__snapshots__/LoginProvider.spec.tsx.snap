@@ -1,0 +1,200 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LoginProvider > login > ✅ ok 1`] = `
+{
+  "expireAt": "2022-11-03T15:00:00Z",
+  "requirePasswordUpdate": true,
+  "userName": "user1",
+}
+`;
+
+exports[`LoginProvider > login > ✅ ok 2`] = `
+{
+  "addons": [],
+  "authType": "",
+  "defaultPassword": "",
+  "displayName": "user1 name",
+  "name": "user1",
+  "roles": [
+    "CosmoAdmin",
+  ],
+  "status": "",
+}
+`;
+
+exports[`LoginProvider > login > ✅ ok 3`] = `[]`;
+
+exports[`LoginProvider > login > ❌ getUser error 1`] = `[Error: [mock] getUser error]`;
+
+exports[`LoginProvider > login > ❌ getUser error 2`] = `undefined`;
+
+exports[`LoginProvider > login > ❌ getUser error 3`] = `
+[
+  [
+    "[mock] getUser error",
+    {
+      "variant": "error",
+    },
+  ],
+  [
+    "[mock] getUser error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > login > ❌ ng 1`] = `[Error: [mock] login error]`;
+
+exports[`LoginProvider > login > ❌ ng 2`] = `undefined`;
+
+exports[`LoginProvider > login > ❌ ng 3`] = `
+[
+  [
+    "[mock] login error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > logout > ✅ ok > logout calls 1`] = `
+[
+  [
+    {},
+  ],
+]
+`;
+
+exports[`LoginProvider > logout > ✅ ok 1`] = `undefined`;
+
+exports[`LoginProvider > logout > ✅ ok 2`] = `[]`;
+
+exports[`LoginProvider > logout > ❌ error > logout calls 1`] = `
+[
+  [
+    {},
+  ],
+]
+`;
+
+exports[`LoginProvider > logout > ❌ error 1`] = `[Error: [mock] logout error]`;
+
+exports[`LoginProvider > logout > ❌ error 2`] = `
+[
+  [
+    "[mock] logout error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > refreshUserInfo > logined > ✅ ok 1`] = `undefined`;
+
+exports[`LoginProvider > refreshUserInfo > logined > ✅ ok 2`] = `
+{
+  "addons": [],
+  "authType": "",
+  "defaultPassword": "",
+  "displayName": "user1 name",
+  "name": "user1",
+  "roles": [
+    "CosmoAdmin",
+  ],
+  "status": "",
+}
+`;
+
+exports[`LoginProvider > refreshUserInfo > logined > ✅ ok 3`] = `[]`;
+
+exports[`LoginProvider > refreshUserInfo > not login > ✅ ok 1`] = `undefined`;
+
+exports[`LoginProvider > refreshUserInfo > not login > ✅ ok 2`] = `undefined`;
+
+exports[`LoginProvider > refreshUserInfo > not login > ✅ ok 3`] = `[]`;
+
+exports[`LoginProvider > updatePassword > ✅ ok > putUserPassword calls 1`] = `
+[
+  [
+    {
+      "currentPassword": "oldpw",
+      "newPassword": "newpw",
+      "userName": "user1",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > updatePassword > ✅ ok 1`] = `
+{
+  "message": "ok",
+}
+`;
+
+exports[`LoginProvider > updatePassword > ✅ ok 2`] = `[]`;
+
+exports[`LoginProvider > updatePassword > ❌ error > putUserPassword calls 1`] = `
+[
+  [
+    {
+      "currentPassword": "oldpw",
+      "newPassword": "newpw",
+      "userName": "user1",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > updatePassword > ❌ error 1`] = `[Error: [mock] updateUserPassword error]`;
+
+exports[`LoginProvider > updatePassword > ❌ error 2`] = `
+[
+  [
+    "[mock] updateUserPassword error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > verify > ✅ ok 1`] = `
+{
+  "addons": [],
+  "authType": "",
+  "defaultPassword": "",
+  "displayName": "user1 name",
+  "name": "user1",
+  "roles": [
+    "CosmoAdmin",
+  ],
+  "status": "",
+}
+`;
+
+exports[`LoginProvider > verify > ✅ ok 2`] = `[]`;
+
+exports[`LoginProvider > verify > ❌ getUser error 1`] = `undefined`;
+
+exports[`LoginProvider > verify > ❌ getUser error 2`] = `
+[
+  [
+    "[mock] getUser error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`LoginProvider > verify > ❌ ng / id is undefined 1`] = `undefined`;
+
+exports[`LoginProvider > verify > ❌ ng / id is undefined 2`] = `[]`;
+
+exports[`LoginProvider > verify > ❌ ng 1`] = `undefined`;
+
+exports[`LoginProvider > verify > ❌ ng 2`] = `[]`;

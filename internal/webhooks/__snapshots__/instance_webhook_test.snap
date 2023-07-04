@@ -1,0 +1,62 @@
+
+[Test_mutateInstanceObject/mutate_workspace_instance - 1]
+{
+ "metadata": {
+  "creationTimestamp": null,
+  "labels": {
+   "cosmo-workspace.github.io/type": "workspace"
+  },
+  "name": "workspace-instance"
+ },
+ "spec": {
+  "override": {
+   "patchesJson6902": [
+    {
+     "target": {
+      "apiVersion": "apps/v1",
+      "kind": "Deployment",
+      "name": "workspace-instance-deployment"
+     }
+    },
+    {
+     "target": {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "name": "workspace-instance-service"
+     }
+    }
+   ]
+  },
+  "template": {
+   "name": "workspace-template"
+  },
+  "vars": {
+   "XXX": "xxx"
+  }
+ },
+ "status": {}
+}
+---
+
+[Test_mutateInstanceObject/mutate_useraddon_clusterinstance - 1]
+{
+ "metadata": {
+  "creationTimestamp": null,
+  "labels": {
+   "cosmo-workspace.github.io/type": "useraddon"
+  },
+  "name": "workspace-instance"
+ },
+ "spec": {
+  "override": {},
+  "template": {
+   "name": "workspace-template"
+  },
+  "vars": {
+   "XXX": "xxx",
+   "YYY": "yyy"
+  }
+ },
+ "status": {}
+}
+---

@@ -1,0 +1,8407 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`useNetworkRule > useNetworkRule removeNetwork > error 1`] = `[Error: [mock] deleteNetworkRule error]`;
+
+exports[`useNetworkRule > useNetworkRule removeNetwork > error 2`] = `
+[
+  [
+    "[mock] deleteNetworkRule error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useNetworkRule > useNetworkRule removeNetwork > normal 1`] = `
+[
+  [
+    "ok",
+    {
+      "variant": "success",
+    },
+  ],
+]
+`;
+
+exports[`useNetworkRule > useNetworkRule upsertNetwork > error 1`] = `[Error: [mock] upsertNetworkRule error]`;
+
+exports[`useNetworkRule > useNetworkRule upsertNetwork > error 2`] = `
+[
+  [
+    "[mock] upsertNetworkRule error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useNetworkRule > useNetworkRule upsertNetwork > normal 1`] = `
+[
+  [
+    "ok",
+    {
+      "variant": "success",
+    },
+  ],
+]
+`;
+
+exports[`useTemplates > get error 1`] = `[Error: [mock] getWorkspaceTemplates error]`;
+
+exports[`useTemplates > get error 2`] = `[]`;
+
+exports[`useTemplates > get error 3`] = `
+[
+  [
+    "[mock] getWorkspaceTemplates error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useTemplates > normal 1`] = `
+[
+  {
+    "description": "",
+    "isClusterScope": false,
+    "name": "tmpl1",
+    "requiredVars": [],
+  },
+  {
+    "description": "",
+    "isClusterScope": false,
+    "name": "tmpl2",
+    "requiredVars": [
+      {
+        "defaultValue": "",
+        "varName": "var1",
+      },
+      {
+        "defaultValue": "",
+        "varName": "var2",
+      },
+    ],
+  },
+  {
+    "description": "",
+    "isClusterScope": false,
+    "name": "tmpl3",
+    "requiredVars": [],
+  },
+]
+`;
+
+exports[`useTemplates > normal 2`] = `[]`;
+
+exports[`useTemplates > normal empty 1`] = `[]`;
+
+exports[`useTemplates > normal empty 2`] = `[]`;
+
+exports[`useWorkspace > error 1`] = `[]`;
+
+exports[`useWorkspace > useWorkspace createWorkspace > get error 1`] = `[Error: [mock] createWorkspace error]`;
+
+exports[`useWorkspace > useWorkspace createWorkspace > get error 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace createWorkspace > get error 3`] = `
+[
+  [
+    "[mock] createWorkspace error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace createWorkspace > normal 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws15",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace createWorkspace > normal 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws14",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Creating",
+    },
+  },
+  {
+    "name": "ws15",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace createWorkspace > normal 3`] = `
+[
+  [
+    "ok",
+    {
+      "variant": "success",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace deleteWorkspace > error 1`] = `[Error: [mock] updateUserRole error]`;
+
+exports[`useWorkspace > useWorkspace deleteWorkspace > error 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace deleteWorkspace > error 3`] = `
+[
+  [
+    "[mock] updateUserRole error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace deleteWorkspace > normal 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace deleteWorkspace > normal 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace deleteWorkspace > normal 3`] = `
+[
+  [
+    "ok",
+    {
+      "variant": "success",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > get error 1`] = `[ConnectError: [unauthenticated] [mock] getWorkspaces error]`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > get error 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > get error 3`] = `
+[
+  [
+    "[unauthenticated] [mock] getWorkspaces error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > normal 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > normal 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > normal empty 1`] = `[]`;
+
+exports[`useWorkspace > useWorkspace getWorkspaces > normal empty 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Creating",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Creating",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 3`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "NotRunning",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 4`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "NotRunning",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 5`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Pending",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 6`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal creating 7`] = `[]`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal network modify 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal network modify 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal network modify 3`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal network modify 4`] = `[]`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal stopping 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal stopping 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal stopping 3`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal stopping 4`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "NotRunning",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal stopping 5`] = `[]`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 3`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 4`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 5`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 6`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 7`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 8`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 9`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 10`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 11`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 12`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 13`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 14`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 15`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 16`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 17`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 18`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 19`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 20`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 21`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 22`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 23`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 24`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 25`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 26`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 27`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 28`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 29`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 30`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 31`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 32`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 33`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 34`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 35`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 36`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 37`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 38`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 39`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 40`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 41`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 42`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 43`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 44`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 45`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 46`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 47`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 48`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 49`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 50`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 51`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 52`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 53`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 54`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 55`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 56`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 57`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 58`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 59`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 60`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 61`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 62`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 63`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 64`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 65`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 66`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 67`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 68`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 69`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 70`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 71`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 72`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 73`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 74`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 75`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 76`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 77`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 78`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 79`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 80`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 81`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 82`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 83`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 84`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 85`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 86`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 87`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 88`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 89`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 90`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 91`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 92`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 93`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 94`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 95`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 96`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 97`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 98`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 99`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 100`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 101`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 102`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 103`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 104`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 105`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 106`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 107`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 108`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 109`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 110`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 111`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 112`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 113`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 114`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 115`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 116`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 117`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 118`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 119`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 120`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 121`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "0",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspace > normal timeout 122`] = `[]`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspaces > normal 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace refreshWorkspaces > normal 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace runWorkspace > error 1`] = `[Error: [mock] updateWorkspace error]`;
+
+exports[`useWorkspace > useWorkspace runWorkspace > error 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace runWorkspace > error 3`] = `
+[
+  [
+    "[mock] updateWorkspace error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace runWorkspace > normal 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace runWorkspace > normal 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace runWorkspace > normal 3`] = `
+[
+  [
+    "Successfully run workspace",
+    {
+      "variant": "success",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace stopWorkspace > error 1`] = `[Error: [mock] patchWorkspace error]`;
+
+exports[`useWorkspace > useWorkspace stopWorkspace > error 2`] = `[]`;
+
+exports[`useWorkspace > useWorkspace stopWorkspace > error 3`] = `
+[
+  [
+    "[mock] patchWorkspace error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspace > useWorkspace stopWorkspace > normal 1`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace stopWorkspace > normal 2`] = `
+[
+  {
+    "name": "ws11",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws12",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl2",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+  {
+    "name": "ws13",
+    "ownerName": "user1",
+    "spec": {
+      "network": [],
+      "replicas": "1",
+      "template": "tmpl1",
+      "vars": {
+        "xxx": "XXXX",
+        "yyy": "YYYY",
+      },
+    },
+    "status": {
+      "mainUrl": "",
+      "phase": "Running",
+    },
+  },
+]
+`;
+
+exports[`useWorkspace > useWorkspace stopWorkspace > normal 3`] = `
+[
+  [
+    "Successfully stopped workspace",
+    {
+      "variant": "success",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > error 1`] = `[Error: [mock] getUsers error]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > error 2`] = `
+[
+  [
+    "[mock] getUsers error",
+    {
+      "variant": "error",
+    },
+  ],
+]
+`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > normal 1`] = `[]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > normal 2`] = `[]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > normal empty 1`] = `[]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > normal empty 2`] = `[]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > normal no change 1`] = `[]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers getUsers > normal no change 2`] = `[]`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers not login > normal 1`] = `
+{
+  "addons": [],
+  "authType": "",
+  "defaultPassword": "",
+  "displayName": "",
+  "name": "",
+  "roles": [],
+  "status": "",
+}
+`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers not login > normal 2`] = `
+[
+  {
+    "addons": [],
+    "authType": "",
+    "defaultPassword": "",
+    "displayName": "",
+    "name": "",
+    "roles": [],
+    "status": "",
+  },
+]
+`;
+
+exports[`useWorkspaceUsers > useWorkspaceUsers not login > normal 3`] = `[]`;

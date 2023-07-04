@@ -1,0 +1,137 @@
+['User controller when creating User resource should do create namespace, password and addons 1']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ua\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"displayName\": \"お名前\",
+    \"authType\": \"password-secret\",
+    \"addons\": [
+      {
+        \"template\": {
+          \"name\": \"namespaced-addon\"
+        },
+        \"vars\": {
+          \"IMAGE_TAG\": \"v0.71.0\"
+        }
+      },
+      {
+        \"template\": {
+          \"name\": \"cluster-addon\",
+          \"clusterScoped\": true
+        }
+      }
+    ]
+  },
+  \"status\": {
+    \"phase\": \"Active\",
+    \"namespace\": {
+      \"kind\": \"Namespace\",
+      \"name\": \"cosmo-user-ua\",
+      \"apiVersion\": \"v1\"
+    },
+    \"addons\": [
+      {
+        \"kind\": \"Instance\",
+        \"namespace\": \"cosmo-user-ua\",
+        \"name\": \"useraddon-namespaced-addon\",
+        \"apiVersion\": \"cosmo-workspace.github.io/v1alpha1\"
+      },
+      {
+        \"kind\": \"ClusterInstance\",
+        \"name\": \"useraddon-ua-cluster-addon\",
+        \"apiVersion\": \"cosmo-workspace.github.io/v1alpha1\"
+      }
+    ]
+  }
+}
+"""
+
+['User controller when updating user addon should gc old addon and try to create new addon 1']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ua\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"displayName\": \"お名前\",
+    \"authType\": \"password-secret\",
+    \"addons\": [
+      {
+        \"template\": {
+          \"name\": \"namespaced-addon\"
+        },
+        \"vars\": {
+          \"KEY\": \"VAL\"
+        }
+      },
+      {
+        \"template\": {
+          \"name\": \"empty-addon\"
+        }
+      }
+    ]
+  },
+  \"status\": {
+    \"phase\": \"Active\",
+    \"namespace\": {
+      \"kind\": \"Namespace\",
+      \"name\": \"cosmo-user-ua\",
+      \"apiVersion\": \"v1\"
+    },
+    \"addons\": [
+      {
+        \"kind\": \"Instance\",
+        \"namespace\": \"cosmo-user-ua\",
+        \"name\": \"useraddon-namespaced-addon\",
+        \"apiVersion\": \"cosmo-workspace.github.io/v1alpha1\"
+      },
+      {
+        \"kind\": \"ClusterInstance\",
+        \"name\": \"useraddon-ua-cluster-addon\",
+        \"apiVersion\": \"cosmo-workspace.github.io/v1alpha1\"
+      }
+    ]
+  }
+}
+"""
+
+['User controller when updating user addon should gc old namespaced addon 1']
+SnapShot = """
+{
+  \"metadata\": {
+    \"name\": \"ua\",
+    \"creationTimestamp\": null
+  },
+  \"spec\": {
+    \"displayName\": \"お名前\",
+    \"authType\": \"password-secret\",
+    \"addons\": [
+      {
+        \"template\": {
+          \"name\": \"empty-addon\"
+        }
+      }
+    ]
+  },
+  \"status\": {
+    \"phase\": \"Active\",
+    \"namespace\": {
+      \"kind\": \"Namespace\",
+      \"name\": \"cosmo-user-ua\",
+      \"apiVersion\": \"v1\"
+    },
+    \"addons\": [
+      {
+        \"kind\": \"Instance\",
+        \"namespace\": \"cosmo-user-ua\",
+        \"name\": \"useraddon-empty-addon\",
+        \"apiVersion\": \"cosmo-workspace.github.io/v1alpha1\"
+      }
+    ]
+  }
+}
+"""

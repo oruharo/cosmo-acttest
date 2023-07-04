@@ -1,0 +1,10 @@
+{
+    "go.testEnvFile": "${workspaceFolder}/.vscode/go-test.env",
+    "go.testFlags": [
+        "-v"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+}
