@@ -62,13 +62,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install go-releaser
-        run: curl -sL https://git.io/goreleaser | bash
-      - name: Release
+      - name: GoReleaser
+        uses: goreleaser/goreleaser-action@v4
+        with:
+          distribution: goreleaser
+          version: latest
+          args: release --rm-dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          goreleaser --rm-dist
+
+#       - name: Install go-releaser
+#         run: curl -sL https://git.io/goreleaser | bash
+#       - name: Release
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         run: |
+#           goreleaser --rm-dist
 
   # controller-manager:
   #   runs-on: ubuntu-latest
