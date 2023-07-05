@@ -39,10 +39,9 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: "1.20"
-      # - name: Create tag (not push)
-      #   run: |
-      #     git tag "${{ needs.fix_version.outputs.version }}"
-      # git push origin "${{ needs.fix_version.outputs.version }}"
+      - name: Create tag (not push)
+        run: |
+          git tag "${{ needs.fix_version.outputs.version }}"
       - name: Delete drafts
         uses: hugo19941994/delete-draft-releases@v1.0.0
         env:
